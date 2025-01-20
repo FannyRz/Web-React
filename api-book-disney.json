@@ -1,0 +1,323 @@
+[
+    {
+        "_id":1,
+        "book":[
+            "La Petite Sirène"
+        ],
+        "date": 1989,
+        "authors": [
+            "John Musker","Ron Clements"
+        ],
+        "theme":[ 
+            "sacrifice", "amour","acceptation de soi","identité","liberté"
+        ],
+        "description":[
+            "Ce livre raconte l'histoire d'Ariel, une jeune princesse sirène qui rêve de devenir humaine et tombe amoureuse du prince Éric, ce qui la conduit à conclure un accord magique avec Ursula, une méchante sorcière des mers, pour devenir humaine et être avec lui."
+        ]
+    },
+    {
+        "_id":2,
+        "book":[
+            "Aladdin"
+        ],
+        "date": 1992,
+        "authors": [
+            "John Musker","Ron Clements"
+        ],
+        "theme":[ 
+            "désir", "rêve","authenticité","amour","liberté"
+        ],
+        "description":[
+            "Au pays des Mille et une nuits, un jeune orphelin un peu voleur tombe amoureux d'une belle jeune fille. Mais celle-ci est la fille du sultan et doit se marier à Jafar, le grand vizir. Ce dernier est un homme assoiffé de pouvoir, à la recherche d'une lampe magique qui réalisera ses vœux. Or seul un homme pur peut la trouver. Aladdin va justement entrer en sa possession et réussir à faire sortir le génie de la lampe..."
+        ]
+    },
+    {
+        "_id":3,
+        "book":[
+            "La Belle et la Bête"
+        ],
+        "date": 1991,
+        "authors": [
+            "Gary Trousdale", "Kirk Wise"
+        ],
+        "theme":[ 
+            "compation", "amour véritable","acceptation de soi","sacrifice"
+        ],
+        "description":[
+            "La Belle et la Bête raconte l'histoire de Belle, qui prend la place de son père capturé par une Bête dans un château. Au fil du temps, elle découvre que la Bête est un prince maudit, et leur amitié se transforme en amour. Leur amour brise la malédiction, et la Bête redevient prince. Gaston, un prétendant de Belle, tente de les séparer, mais l'amour triomphe finalement."
+        ]
+    },
+    {
+        "_id": 4,
+        "book": [
+            "Le Roi Lion"
+        ],
+        "date": 1994,
+        "authors": [
+            "Roger Allers", "Rob Minkoff"
+        ],
+        "theme": [
+            "destin", "responsabilité", "courage", "perte", "identité"
+        ],
+        "description": [
+            "Simba, un jeune lion, doit affronter son destin après la mort tragique de son père, Mufasa, tué par son oncle Scar. Exilé, Simba découvre le véritable sens de l'honneur et de la responsabilité pour reprendre son trône et restaurer l'équilibre du royaume."
+        ]
+    },
+    {
+        "_id": 5,
+        "book": [
+            "Cendrillon"
+        ],
+        "date": 1950,
+        "authors": [
+            "Wilfred Jackson", "Clyde Geronimi", "Hamilton Luske"
+        ],
+        "theme": [
+            "justice", "rêve", "oppression", "amour", "liberté"
+        ],
+        "description": [
+            "Cendrillon raconte l'histoire d'une jeune fille douce et gentille, vit sous le joug de sa belle-mère et de ses demi-sœurs cruelles. Un jour, grâce à l'aide de sa marraine la fée, elle est invitée au bal royal où elle rencontre le prince. Mais à minuit, son charme doit se briser..."
+        ]
+    },
+    {
+        "_id": 6,
+        "book": [
+            "Mulan"
+        ],
+        "date": 1998,
+        "authors": [
+            "Tony Bancroft", "Barry Cook"
+        ],
+        "theme": [
+            "courage", "identité", "honneur", "égalité", "sacrifice"
+        ],
+        "description": [
+            "Mulan, une jeune femme chinoise, se déguise en homme pour prendre la place de son père malade dans l'armée impériale. Elle fait preuve de bravoure et de stratégie, montrant que la valeur d'un guerrier n'est pas déterminée par son sexe."
+        ]
+    },
+    {
+        "_id": 7,
+        "book": [
+            "Pocahontas"
+        ],
+        "date": 1995,
+        "authors": [
+            "Mike Gabriel", "Eric Goldberg"
+        ],
+        "theme": [
+            "amour", "nature", "conflit culturel", "liberté", "acceptation"
+        ],
+        "description": [
+            "Pocahontas, une jeune amérindienne, tombe amoureuse de John Smith, un explorateur anglais. Leur amour naissant est mis à l'épreuve par le conflit entre leurs peuples respectifs, mais ils tentent de bâtir un pont de compréhension et de paix."
+        ]
+    },
+    {
+        "_id": 8,
+        "book": [
+            "La Reine des Neiges"
+        ],
+        "date": 2013,
+        "authors": [
+            "Chris Buck", "Jennifer Lee"
+        ],
+        "theme": [
+            "fraternité", "amour", "sacrifice", "liberté", "identité"
+        ],
+        "description": [
+            "Une jeune reine aux pouvoirs glacés,nommée Elsa, lutte pour contrôler sa magie et protéger sa sœur Anna. Après un accident, elle s'exile, et Anna part à sa recherche. Ensemble, elles devront affronter des défis pour sauver leur royaume et leur relation."
+        ]
+    },
+    {
+        "_id": 9,
+        "book": [
+            "Zootopie"
+        ],
+        "date": 2016,
+        "authors": [
+            "Byron Howard", "Rich Moore"
+        ],
+        "theme": [
+            "tolérance", "diversité", "justice", "préjugés", "courage"
+        ],
+        "description": [
+            "Judy Hopps, une lapine policière, fait équipe avec Nick Wilde, un renard escroc, pour résoudre une série de disparitions mystérieuses à Zootopie, tout en combattant les préjugés et les stéréotypes."
+        ]
+    },
+    {
+        "_id": 10,
+        "book": [
+            "Raiponce"
+        ],
+        "date": 2010,
+        "authors": [
+            "Nathan Greno", "Byron Howard"
+        ],
+        "theme": [
+            "liberté", "amour", "identité", "confiance", "aventures"
+        ],
+        "description": [
+            "Raiponce, une princesse emprisonnée dans une tour, s'échappe pour la première fois et rencontre Flynn Rider, un voleur. Ensemble, ils vivent une aventure qui les mène à la liberté et à l'amour."
+        ]
+    },
+    {
+        "_id": 11,
+        "book": [
+            "Les Mondes de Ralph"
+        ],
+        "date": 2012,
+        "authors": [
+            "Rich Moore"
+        ],
+        "theme": [
+            "acceptation de soi", "identité", "amitié", "échec", "changement"
+        ],
+        "description": [
+            "Ralph, un méchant de jeu vidéo, décide de prouver qu'il peut être un héros. Il se lie d'amitié avec Vanellope, une jeune fille virtuelle, et ensemble, ils combattent un ennemi menaçant tous les jeux."
+        ]
+    },
+    {
+        "_id": 12,
+        "book": [
+            "Toy Story"
+        ],
+        "date": 1995,
+        "authors": [
+            "John Lasseter"
+        ],
+        "theme": [
+            "amitié", "jalousie", "acceptation", "changement", "loyauté"
+        ],
+        "description": [
+            "Woody, le cowboy, se sent menacé par l'arrivée de Buzz l'Éclair, un nouveau jouet. Mais lorsque Woody et Buzz se retrouvent perdus loin de chez Andy, ils unissent leurs forces pour revenir à la maison."
+        ]
+    },
+    {
+        "_id": 13,
+        "book": [
+            "Lilo & Stitch"
+        ],
+        "date": 2002,
+        "authors": [
+            "Chris Sanders", "Dean DeBlois"
+        ],
+        "theme": [
+            "famille", "amour", "acceptation", "solitude", "identité"
+        ],
+        "description": [
+            "Une jeune fille hawaïenne,nommée Lilo, adopte un chien extraterrestre nommé Stitch, qui se révèle être un expériment génétiquement modifié. Ensemble, ils forment une famille hors du commun, surmontant leurs différences et leurs difficultés."
+        ]
+    },
+    {
+        "_id": 14,
+        "book": [
+            "Monstres et Cie"
+        ],
+        "date": 2001,
+        "authors": [
+            "Pete Docter", "David Silverman", "Lee Unkrich"
+        ],
+        "theme": [
+            "amitié", "courage", "réinvention", "innocence", "responsabilité"
+        ],
+        "description": [
+            "Mike et Sulley, deux monstres, travaillent à effrayer les enfants pour produire de l'énergie. Mais lorsqu'une petite fille nommée Boo pénètre accidentellement dans leur monde, ils se retrouvent à tout remettre en question pour la protéger."
+        ]
+    },
+    {
+        "_id": 15,
+        "book": [
+            "La Belle au Bois Dormant"
+        ],
+        "date": 1959,
+        "authors": [
+            "Clyde Geronimi", "Wilfred Jackson", "Les Clark"
+        ],
+        "theme": [
+            "amour", "destin", "confiance", "malédiction", "réveil"
+        ],
+        "description": [
+            "La princesse Aurore est maudite par la sorcière Maléfique, qui l'endort d'un profond sommeil après sa piqûre avec un fuseau. Seul un baiser d'amour véritable peut la réveiller et briser la malédiction."
+        ]
+    },
+    {
+        "_id": 16,
+        "book": [
+            "Les Aristochats"
+        ],
+        "date": 1970,
+        "authors": [
+            "Wolfgang Reitherman"
+        ],
+        "theme": [
+            "amitié", "liberté", "famille", "aventure", "égalité"
+        ],
+        "description": [
+            "Une chatte aristocrate et ses trois chatons sont enlevés par le majordome de leur propriétaire, mais ils trouvent refuge auprès de Thomas O'Malley, un chat de rue. Ensemble, ils vivent une aventure pour retrouver leur maison."
+        ]
+    },
+    {
+        "_id": 17,
+        "book": [
+            "Hercule"
+        ],
+        "date": 1997,
+        "authors": [
+            "Ron Clements", "John Musker"
+        ],
+        "theme": [
+            "héroïsme", "destin", "amour", "identité", "confiance"
+        ],
+        "description": [
+            "Hercule, un demi-dieu, cherche à retrouver sa place parmi les dieux de l'Olympe. Aidé par Pégase et Meg, il affronte des épreuves pour prouver qu'il est un véritable héros."
+        ]
+    },
+    {
+        "_id": 18,
+        "book": [
+            "Tarzan"
+        ],
+        "date": 1999,
+        "authors": [
+            "Kevin Lima", "Chris Buck"
+        ],
+        "theme": [
+            "identité", "famille", "dévotion", "amour", "nature"
+        ],
+        "description": [
+            "Tarzan, élevé par des gorilles dans la jungle, découvre qu'il est humain après une rencontre avec Jane. Il doit choisir entre sa vie avec les gorilles ou rejoindre le monde des hommes."
+        ]
+    },
+    {
+        "_id": 19,
+        "book": [
+            "Bambi"
+        ],
+        "date": 1942,
+        "authors": [
+            "James Algar", "Samuel Armstrong"
+        ],
+        "theme": [
+            "nature", "famille", "perte", "croissance", "amitié"
+        ],
+        "description": [
+            "Bambi, un jeune cerf, apprend les leçons de la vie et de la nature au côté de ses amis Thumper et Flower, tout en affrontant les dangers de la forêt et la perte de sa mère."
+        ]
+    },
+    {
+        "_id": 20,
+        "book": [
+            "Atlantide, l'empire perdu"
+        ],
+        "date": 2001,
+        "authors": [
+            "Gary Trousdale", "Kirk Wise"
+        ],
+        "theme": [
+            "aventure", "exploration", "courage", "amitié", "découverte"
+        ],
+        "description": [
+            "Milo Thatch, un jeune linguiste, se lance dans une expédition pour découvrir l'Atlantide, une cité mythique. Aidé par un groupe de chercheurs excentriques, il doit sauver la ville et son peuple d'une menace imminente."
+        ]
+    }
+
+]
