@@ -22,15 +22,6 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div class="footer-col">
-                  <h4>online shop</h4>
-                  <ul>
-                    <li><a href="#">watch</a></li>
-                    <li><a href="#">bag</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">dress</a></li>
-                  </ul>
-                </div>
-                <div class="footer-col">
                   <h4>Nous suivre</h4>
                   <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>

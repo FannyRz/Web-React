@@ -11,22 +11,24 @@ import booksData from "./api-book-disney.js";
 export default function App(){
   const [search, setSearch] = useState("");
   const [booksSortBy, setBooksSortBy] = useState("date");
+  const [booksOrderBy, setBooksOrderBy] = useState("croissant");
 
   const filteredBooksData = useMemo(() => {
     let result = booksData.filter((book) =>
       book.title.toLowerCase().includes(search.toLowerCase())
     );
     result = result.toSorted((a, b) => {
+      let comparaison =0;
       if (booksSortBy === "date") {
         // date can be null
-        return (a.date || 0) - (b.date || 0);
+        comparaison = (a.date || 0) - (b.date || 0);
       } else {
-        //sort in alphabetical order
-        return a.title.localeCompare(b.title);
+        comparaison = a.title.localeCompare(b.title);
       }
+      return booksOrderBy === "croissant" ? comparaison : -comparaison;
     });
     return result;
-  }, [booksData, search, booksSortBy]);
+  }, [booksData, search, booksSortBy, booksOrderBy]);
  
   return (
     <div>
@@ -48,6 +50,15 @@ export default function App(){
           <option value="date">Date</option>
           <option value="title">Titre</option>
         </select>
+        <label htmlFor="order"> Dans l'ordre : </label>
+        <select
+          id="order"
+          value={booksOrderBy}
+          onChange={(e) => setBooksOrderBy(e.target.value)}
+        >
+          <option value="croissant">Croissant</option>
+          <option value="decroissant">Décroissant</option>
+        </select>
       </div>
 
       <div id="book-gallery">
@@ -56,6 +67,7 @@ export default function App(){
         key={book.id}  
         title={book.title}
         date={book.date}
+        authors={book.authors}
         theme={book.theme}
         description={book.description}
         pictureUrl={book.pictureUrl}
