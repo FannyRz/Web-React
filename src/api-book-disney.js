@@ -33,7 +33,7 @@ export default [
             "Gary Trousdale", "Kirk Wise"
         ],
         "theme":[ 
-            "compation", "amour véritable","acceptation de soi","sacrifice"
+            "compassion", "amour véritable","acceptation de soi","sacrifice"
         ],
         "description": "La Belle et la Bête raconte l'histoire de Belle, qui prend la place de son père capturé par une Bête dans un château. Au fil du temps, elle découvre que la Bête est un prince maudit, et leur amitié se transforme en amour. Leur amour brise la malédiction, et la Bête redevient prince. Gaston, un prétendant de Belle, tente de les séparer, mais l'amour triomphe finalement.",
         "pictureUrl": "https://wiki.lepaysdumanga.fr/_media/les_longs_metrages/b/la_belle_et_la_bete_-_1991_dvd_11.jpg"
