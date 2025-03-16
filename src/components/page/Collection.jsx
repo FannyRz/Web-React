@@ -1,10 +1,9 @@
 import './Collection.css';
 import { useState, useMemo } from 'react'
-import { useParams } from 'react-router-dom';
-import BookCard from './BookCard.jsx';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import booksData from "../api-book-disney.js";
+import BookCard from '../BookCard.jsx';
+import Header from '../Header.jsx';
+import Footer from '../Footer.jsx';
+import booksData from "../../api-book-disney.js";
 
 
 export default function Collection() {
