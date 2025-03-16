@@ -1,0 +1,11 @@
+#contact {
+    padding: 20px;
+}
+
+#contact h1, #contact h3 {
+    padding : 20px 10px;
+}
+
+#contact p {
+    padding: 5px 10px ;
+}

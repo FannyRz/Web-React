@@ -1,0 +1,127 @@
+.contact-form {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+  
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+  
+.contact-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: vertical; 
+    min-height: 50px; 
+    max-height: 200px; 
+    overflow: auto; 
+}
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #5b9bd5;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .contact-form button:disabled {
+    background-color: #ccc;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-form button:active {
+    background-color: #388e3c;
+  }
+  
+  .contact-form .reset-button {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .contact-form .error-message {
+    font-size: 14px;
+    color: #e74c3c;
+  }
+  
+  .contact-form .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-form .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 20px;
+    }
+  
+    .contact-form button {
+      width: 100%;
+    }
+  
+    .contact-form .reset-button {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form-container {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .contact-form button {
+      padding: 12px;
+    }
+  }
+  
