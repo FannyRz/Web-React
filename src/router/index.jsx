@@ -1,12 +1,12 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import Accueil from "../components/page/Accueil.jsx";
+import Home from "../components/page/Home.jsx";
 import Collection from "../components/page/Collection.jsx";
 import Contact from "../components/page/Contact.jsx";
 
 export default createBrowserRouter([
   {
     path: "/",
-    element: <Accueil />,
+    element: <Home />,
   },
   {
     path: "/collection",

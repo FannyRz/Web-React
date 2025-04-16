@@ -28,19 +28,19 @@ export default function ContactForm() {
     <div className="contact-form">
 
         <div className="contact-form-container">
-      <label htmlFor="nom">Nom :</label>
-      <input type="text" id="nom" value={nom} onChange={handleNomChange} placeholder="Entrez votre nom" />
+      <label htmlFor="nom">Nom* :</label>
+      <input type="text" id="nom" value={nom} onChange={handleNomChange} placeholder="Entrez votre nom"/>
 
-      <label htmlFor="prénom">Prénom :</label>
-      <input type="text" id="prenom" value={prenom} onChange={handlePrenomChange} placeholder="Entrez votre prénom" />
+      <label htmlFor="prénom">Prénom* :</label>
+      <input type="text" id="prenom" value={prenom} onChange={handlePrenomChange} placeholder="Entrez votre prénom"/>
 
-      <label htmlFor="email">Email :</label>
-      <input type="email" id="email" value={email} onChange={handleEmailChange} placeholder="Entrez votre email" />
+      <label htmlFor="email">Email* :</label>
+      <input type="email" id="email" value={email} onChange={handleEmailChange} placeholder="Entrez votre email"/>
       {email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email) && (
         <p className="error-message">Adresse email invalide</p>
       )}
 
-      <label htmlFor="message">Message :</label>
+      <label htmlFor="message">Message* :</label>
       <textarea value={message} onChange={handleMessageChange} placeholder="Écrivez votre message" maxLength="180"></textarea>
       {message.length == 180 && ( <p className="error-message">Le message ne peut pas dépasser 180 caractères</p> )}
 

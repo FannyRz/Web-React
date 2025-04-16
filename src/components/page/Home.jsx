@@ -1,13 +1,14 @@
-import './Accueil.css';
+import './Home.css';
 import Header from '../Header.jsx';
 import Footer from '../Footer.jsx';
+import Carousel from '../Carousel.jsx';
 
 
-export default function Accueil() {
+export default function Home() {
     return (
             <div>
               <Header />
-              <h1>Welcome to Accueil page</h1>
+              <Carousel />
               <Footer />
             </div>
           )

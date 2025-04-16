@@ -7,20 +7,21 @@ import booksData from "../../api-book-disney.js";
 
 
 export default function Collection() {
-    const [search, setSearch] = useState("");
-      const [booksSortBy, setBooksSortBy] = useState("date");
-      const [booksOrderBy, setBooksOrderBy] = useState("croissant");
-      const [selectedTheme, setSelectedTheme] = useState("");
+  const [search, setSearch] = useState("");
+  const [booksSortBy, setBooksSortBy] = useState("date");
+  const [booksOrderBy, setBooksOrderBy] = useState("croissant");
+  const [selectedTheme, setSelectedTheme] = useState("");
     
-      const allThemes = useMemo(() => {
-        const themes = booksData.flatMap(book => book.theme);
-        return [...new Set(themes)]; // Supprimer les doublons
-      }, [booksData]);
+  const allThemes = useMemo(() => {
+    const themes = booksData.flatMap(book => book.theme);
+      return [...new Set(themes)]; // Supprimer les doublons
+  }, [booksData]);
     
-      const filteredBooksData = useMemo(() => {
-        let result = booksData.filter((book) =>
-          book.title.toLowerCase().includes(search.toLowerCase())
-        );
+  const filteredBooksData = useMemo(() => {
+    
+    let result = booksData.filter((book) =>
+      book.title.toLowerCase().includes(search.toLowerCase())
+    );
     
         if (selectedTheme) {
           result = result.filter((book) => book.theme.includes(selectedTheme));
@@ -106,4 +107,4 @@ export default function Collection() {
           <Footer />
         </div>
       )
-  }
+}
