@@ -28,7 +28,7 @@ header nav ul li:first-of-type {
 }
 
 header nav ul .menu:hover a {
-    color: rgb(3, 0, 180);
+    color: #4b2e83;
     text-decoration: none;
 }
 

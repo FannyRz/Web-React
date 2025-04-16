@@ -1,16 +1,50 @@
 import './Collection.css';
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from "react";
 import BookCard from '../BookCard.jsx';
 import Header from '../Header.jsx';
 import Footer from '../Footer.jsx';
+import ResetButton from "../ResetButton.jsx";
 import booksData from "../../api-book-disney.js";
 
 
 export default function Collection() {
-  const [search, setSearch] = useState("");
-  const [booksSortBy, setBooksSortBy] = useState("date");
-  const [booksOrderBy, setBooksOrderBy] = useState("croissant");
-  const [selectedTheme, setSelectedTheme] = useState("");
+  const [search, setSearch] = useState(
+    localStorage.getItem("search") || ""
+  );
+  const [booksSortBy, setBooksSortBy] = useState(
+    localStorage.getItem("booksSortBy") || "date"
+  );
+  const [booksOrderBy, setBooksOrderBy] = useState(
+    localStorage.getItem("booksOrderBy") || "croissant"
+  );
+  const [selectedTheme, setSelectedTheme] = useState(
+    localStorage.getItem("selectedTheme") || ""
+  );
+
+  useEffect(() => {
+    localStorage.setItem("search", search)
+  }, [search])
+  useEffect(() => {
+    localStorage.setItem("booksSortBy", booksSortBy)
+  }, [booksSortBy])
+  useEffect(() => {
+    localStorage.setItem("booksOrderBy", booksOrderBy)
+  }, [booksOrderBy])
+  useEffect(() => {
+    localStorage.setItem("selectedTheme", selectedTheme)
+  }, [selectedTheme])
+
+  const resetFilters = () => {
+    setSearch("");
+    setBooksSortBy("date");
+    setBooksOrderBy("croissant");
+    setSelectedTheme("");
+  
+    localStorage.removeItem("search");
+    localStorage.removeItem("booksSortBy");
+    localStorage.removeItem("booksOrderBy");
+    localStorage.removeItem("selectedTheme");
+  };
     
   const allThemes = useMemo(() => {
     const themes = booksData.flatMap(book => book.theme);
@@ -44,8 +78,7 @@ export default function Collection() {
       return (
         <div>
           <Header />
-          <h1>Book Center</h1>
-          <div id="gallery-options">
+          <div className="filters-container">
             <input
               type="text"
               value={search}
@@ -86,6 +119,9 @@ export default function Collection() {
               </option>
             ))}
           </select>
+          <div id="reset-button-wrapper">
+              <ResetButton onClick={resetFilters} />
+          </div>
           </div>
     
           <div id="book-gallery">

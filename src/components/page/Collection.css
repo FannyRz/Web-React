@@ -26,7 +26,7 @@
   }
     
   .book-description-line {
-    color: #353535;
+    color:#333;
     font-size: 12px;
     margin: 5px 0;
   } 
@@ -34,5 +34,52 @@
   #book-gallery {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .filters-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .filters-container input,
+  .filters-container select,
+  .filters-container button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .filters-container label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  #reset-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Responsive (mobile) */
+  @media screen and (max-width: 768px) {
+    .filters-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filters-container input,
+    .filters-container select,
+    .filters-container button {
+      width: 100%;
+    }
   }
   
