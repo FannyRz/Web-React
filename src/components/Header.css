@@ -35,9 +35,10 @@ header nav ul .menu:hover a {
 header a {
     text-decoration: none;
     color: white;
-    font-size:25px;
+    font-size: clamp(16px, 2.5vw, 25px); 
 }
 
 header #logoDisney {
-    width: 9rem;
+    width: clamp(80px, 15vw, 140px);
+    height: auto;
 }

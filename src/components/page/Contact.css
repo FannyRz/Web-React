@@ -1,12 +1,10 @@
 #contact {
-    padding: 1rem 10rem;
-    color : #333;
+    padding: 1rem clamp(1rem, 5vw, 10rem); 
+    color: #333;
 }
 
-#contact h1, #contact h3 {
-    padding : 20px 10px;
-}
-
-#contact p {
-    padding: 5px 10px ;
+#contact h1,
+#contact h3 {
+    padding-bottom: clamp(0.5rem, 2vw, 1.25rem); 
+    font-size: clamp(1.5rem, 4vw, 2.2rem); 
 }

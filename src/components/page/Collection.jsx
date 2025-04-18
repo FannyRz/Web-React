@@ -145,17 +145,17 @@ export default function Collection() {
               />
           )))}
 
-{selectedBook && (
-  <BookModal
-    title={selectedBook.title}
-    date={selectedBook.date}
-    authors={selectedBook.authors}
-    theme={selectedBook.theme}
-    description={selectedBook.description}
-    pictureUrl={selectedBook.pictureUrl}
-    onClose={() => setSelectedBook(null)}
-  />
-)}
+          {selectedBook && (
+            <BookModal
+              title={selectedBook.title}
+              date={selectedBook.date}
+              authors={selectedBook.authors}
+              theme={selectedBook.theme}
+              description={selectedBook.description}
+              pictureUrl={selectedBook.pictureUrl}
+              onClose={() => setSelectedBook(null)}
+            />
+          )}
           </div>
           <Footer />
         </div>

@@ -1,7 +1,7 @@
 .news-content {
   background-color: rgba(255, 255, 255, 0.7); 
-  color : #333;
-  padding: 2em;
+  color: #333;
+  padding: clamp(1rem, 4vw, 2em); 
   border-radius: 1em;
   text-align: center;
   max-width: 80%;
@@ -11,7 +11,7 @@
 .arrow {
   position: absolute;
   top: 50%;
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 3vw, 3rem); 
   background: none;
   border: none;
   color: white;
@@ -21,60 +21,21 @@
 }
 
 .arrow.left {
-  left: 5vw;
+  left: clamp(1rem, 5vw, 5vw); 
 }
 
 .arrow.right {
-  right: 5vw;
+  right: clamp(1rem, 5vw, 5vw); 
 }
 
 .news-content h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem); 
   font-weight: bold;
   margin: 0.5em 0;
 }
 
 .news-content p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   margin-top: 1em;
   line-height: 1.6;
-}
-
-@media screen and (max-width: 768px) {
-  .news-content {
-    padding: 1.5em;
-    max-width: 90%;
-  }
-
-  .arrow {
-    font-size: 5vw;
-    left: 5%;
-    right: 5%;
-  }
-
-  .news-content h3 {
-    font-size: 1.6rem;
-  }
-
-  .news-content p {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .news-content {
-    padding: 1em;
-  }
-
-  .arrow {
-    font-size: 6vw;
-  }
-
-  .news-content h3 {
-    font-size: 1.4rem;
-  }
-
-  .news-content p {
-    font-size: 0.9rem;
-  }
 }
