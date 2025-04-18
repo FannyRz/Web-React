@@ -1,6 +1,7 @@
 import './Collection.css';
 import { useState, useMemo, useEffect } from "react";
 import BookCard from '../BookCard.jsx';
+import BookModal from '../BookModal.jsx';
 import Header from '../Header.jsx';
 import Footer from '../Footer.jsx';
 import ResetButton from "../ResetButton.jsx";
@@ -8,6 +9,9 @@ import booksData from "../../api-book-disney.js";
 
 
 export default function Collection() {
+
+  const [selectedBook, setSelectedBook] = useState(null);
+
   const [search, setSearch] = useState(
     localStorage.getItem("search") || ""
   );
@@ -137,8 +141,21 @@ export default function Collection() {
               theme={book.theme}
               description={book.description}
               pictureUrl={book.pictureUrl}
+              onClick={() => setSelectedBook(book)}
               />
           )))}
+
+{selectedBook && (
+  <BookModal
+    title={selectedBook.title}
+    date={selectedBook.date}
+    authors={selectedBook.authors}
+    theme={selectedBook.theme}
+    description={selectedBook.description}
+    pictureUrl={selectedBook.pictureUrl}
+    onClose={() => setSelectedBook(null)}
+  />
+)}
           </div>
           <Footer />
         </div>

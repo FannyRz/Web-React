@@ -1,0 +1,67 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #book-picture {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  #book-description h3 {
+    font-size: 20px;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  #book-description {
+    padding: 16px; 
+    flex: 1;
+  }
+  
+  .book-description-line {
+    margin-bottom: 12px; 
+  }
+  
+  .information {
+    margin-right: 8px; 
+    display: inline-block;
+  }
+  
+  #book-description span {
+    display: block;
+    line-height: 1.5;
+  }
